@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <div class="score-container">
+                <span id="score">0</span> монет
+            </div>
+            <div class="level-container">
+                Уровень: <span id="level">1</span>
+            </div>
+        </div>
+        <div class="coin-container">
+            <div id="coin" class="coin">
+                <div class="coin-shine"></div>
+            </div>
+        </div>
+        <div id="comboMultiplier" class="combo-multiplier">x1</div>
+        <div class="buttons-container">
+            <div class="upgrades-container">
+                <button id="autoClickerUpgrade" class="upgrade-btn">Авто-кликер (Цена: 10)</button>
+                <button id="clickValueUpgrade" class="upgrade-btn">Улучшить клик (Цена: 20)</button>
+                <button id="bonusTimeUpgrade" class="upgrade-btn">Бонусное время (Цена: 50)</button>
+            </div>
+            <div class="menu-buttons">
+                <button id="showAchievements" class="menu-btn">Достижения</button>
+                <button id="resetProgress" class="menu-btn">Сбросить прогресс</button>
+            </div>
+        </div>
+    </div>
+    <div class="achievements-container">
+        <h3>Достижения</h3>
+        <ul id="achievements-list"></ul>
+        <button class="close-achievements-btn">&times;</button>
+    </div>
+    <audio id="clickSound" src="click.mp3"></audio>
+    <audio id="upgradeSound" src="upgrade.mp3"></audio>
+    <audio id="achievementSound" src="achievement.mp3"></audio>
+    <script src="game.js"></script>
+</body>
+</html>
